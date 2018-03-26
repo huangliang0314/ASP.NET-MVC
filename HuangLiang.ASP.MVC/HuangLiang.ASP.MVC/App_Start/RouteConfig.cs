@@ -15,8 +15,8 @@ namespace HuangLiang.ASP.MVC
 
             routes.MapRoute(
                 name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                url: "{controller}/{action}/{str}",
+                defaults: new { controller = "Home", action = "Index", str = UrlParameter.Optional }
             );
 
             //修改路由1
