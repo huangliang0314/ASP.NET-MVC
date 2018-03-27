@@ -1,0 +1,15 @@
+﻿@using HuangLiang.ASP.MVC.Models
+@model IEnumerable<Event>
+
+<h2>
+    @ViewBag.EventsTitle
+</h2>
+<table>
+    @foreach( Event evt in Model)
+    {
+        <tr>
+            <td>@evt.Day.ToShortDateString()</td>
+            <td>@evt.Text</td>
+        </tr>
+    }
+</table>

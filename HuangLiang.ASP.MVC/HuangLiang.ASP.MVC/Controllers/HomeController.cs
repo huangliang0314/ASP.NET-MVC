@@ -42,5 +42,10 @@ namespace HuangLiang.ASP.MVC.Controllers
             return RedirectToRoute(new { controller = "Home", action = "Hello" });
 
         }
+
+        public ActionResult FileDemo()
+        {
+            return File("~/Contents/Images/QQ11.png","image/png");
+        }
     }
 }

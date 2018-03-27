@@ -1,0 +1,21 @@
+﻿@model HuangLiang.ASP.MVC.Models.EventsAndMenus
+@{
+    Layout = "~/Views/Shared/_layout.cshtml";
+    ViewBag.Title = "Use A Partial View";
+    ViewBag.EventTitle = "Live Events";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>UseAPartialView</title>
+</head>
+<body>
+    <h2>this is the main view</h2>
+    <div> 
+        @Html.Partial("ShowEvents", Model.Events);
+    </div>
+</body>
+</html>

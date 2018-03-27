@@ -12,11 +12,11 @@ namespace HuangLiang.ASP.MVC.Models
         public int Id { get => id; set => id = value; }
         public string Text { get => text; set => text = value; }
         public double Price { get => price; set => price = value; }
-        public string Catogary { get => catogary; set => catogary = value; }
+        public string Category { get => categary; set => categary = value; }
 
         private string text;
         private double price;
-        private string catogary;
+        private string categary;
 
 
     }

@@ -1,0 +1,38 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>UseAPartialView3</title>
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/jquery-1.10.2.intellisense.js"></script>
+</head>
+<body>
+    <script>
+        $(function () {
+            $("#getEvents").click(function () {
+                $("#Events").load("/PartialView/ShowEvents", fun1(obj));
+            });
+        })();
+
+        var fun1 = function (object) {
+            var obje = object;
+            var i = 1;
+        }
+    </script>
+    <h2>Use a partial view</h2>
+    <div>this is the main view</div>
+    <div>
+        <button id="getEvents">加载部分视图</button>
+    </div>
+    <div id="Events">
+
+    </div>
+
+</body>
+</html>
